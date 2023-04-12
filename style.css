@@ -499,6 +499,10 @@ header {
   background-color: #2230d2;
 }
 
+.labels {
+  display: none;
+}
+
 /* Media Queries */
 @media (max-width: 400px) {
   .cards {
