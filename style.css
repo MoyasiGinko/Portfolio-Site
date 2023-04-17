@@ -41,16 +41,62 @@ header {
 }
 
 #logo,
-.fa-bars,
-.fa-times {
+.fa-bars {
   color: #6070ff;
+}
+
+.mobile-menu-m ul li {
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+}
+
+.mobile-menu-m ul {
+  padding: 80px 28px 0 28px;
+  width: 100%;
+  list-style-type: none;
+  color: white;
+}
+
+.mobile-menu-m {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  display: flex;
+  text-align: left;
+  transform: translateX(-100%);
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  backdrop-filter: blur(5px);
+  background: #6070ff;
+}
+
+.mobile-menu-m ul li a {
+  color: white;
+  text-decoration: none;
 }
 
 #logo:hover {
   transform: rotate(-4deg);
 }
 
-.stake {
+.overlay-show {
+  width: 100%;
+  height: 100%;
+  background-color: #dfe1e6;
+  opacity: 0.75;
+}
+
+.show-menu {
+  transform: translateX(0);
+}
+
+.stop-scrolling {
+  overflow: hidden;
+}
+
+.hamburger {
   position: absolute;
   right: 20px;
   z-index: 10;
@@ -61,9 +107,9 @@ header {
   border: none;
 }
 
-.stake-top,
-.stake-middle,
-.stake-bottom {
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
   position: absolute;
   width: 20px;
   height: 2px;
@@ -73,29 +119,29 @@ header {
   transition: all 0.5s;
 }
 
-.stake-middle {
+.hamburger-middle {
   transform: translateY(5px);
 }
 
-.stake-bottom {
+.hamburger-bottom {
   transform: translateY(10px);
 }
 
-/* Transition stake to X when open */
+/* Transition hamburger to X when open */
 .open {
   transform: rotate(90deg);
 }
 
-.open .stake-top {
+.open .hamburger-top {
   transform: rotate(45deg) translateY(6px) translateX(6px);
   background-color: #fff;
 }
 
-.open .stake-middle {
+.open .hamburger-middle {
   display: none;
 }
 
-.open .stake-bottom {
+.open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
   background-color: #fff;
 }
@@ -512,51 +558,16 @@ header {
 }
 
 @media (max-width: 767px) {
-  label #btn-check,
-  label #cancel {
-    cursor: pointer;
-  }
-
-  label #btn-check {
-    display: block;
-  }
-
-  nav ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #172b4d;
-    top: 80px;
-    left: -100%;
-    left: 0;
-    text-align: center;
-    transition: all .5s;
-  }
-
-  nav ul li {
-    display: block;
-    margin: 50px 0px;
-    line-height: 30px;
-  }
-
-  nav ul li a {
-    color: #7a869a;
-    text-decoration: none;
-    font-size: 20px;
-    
-  }
-
-  #check {
+  .nav-links {
     display: none;
   }
-
-  #check:checked nav ul {
-    left: 0;
-  }
-
 }
 
 @media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
   header {
     padding: 1.5% 9%;
     position: fixed;
