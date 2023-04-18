@@ -49,11 +49,11 @@ header {
   margin-bottom: 40px;
   font-size: 32px;
   font-weight: 600;
-  line-height: 44px;
+  line-height: 20px;
 }
 
 .mobile-menu-m ul {
-  padding: 80px 28px 0 28px;
+  padding: 70px 15px 24px 45px;
   width: 100%;
   list-style-type: none;
   color: white;
@@ -161,7 +161,7 @@ header {
 
 .main-container h1 {
   font-size: 40px;
-  font-weight: 700px;
+  font-weight: 700;
   line-height: 52px;
   color: #172b4d;
   margin-bottom: 10px;
@@ -729,7 +729,7 @@ header {
     width: 98px;
     height: 24px;
     flex-direction: row;
-    align-items: left;
+    align-items: flex-end;
     text-align: left;
     margin-left: 10px;
   }

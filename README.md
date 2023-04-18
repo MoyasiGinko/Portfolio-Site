@@ -143,6 +143,11 @@ Double-Click on the "index.html" file to open the web page.
 - LinkedIn: [@mahmudur-rahman-a8a151257](https://www.linkedin.com/in/mahmudur-rahman-a8a151257/)
 - Twitter: [@moyasi_ginko](https://twitter.com/moyasi_ginko)
 
+> 👤 **Gardimy Charles**
+- GitHub: [@Gardimy](https://github.com/Gardimy)
+- Twitter: [@gardyelontiga45](https://twitter.com/gardyelontiga45)
+- LinkedIn: [Gardimy charles](https://www.linkedin.com/in/gardimy-charles)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
