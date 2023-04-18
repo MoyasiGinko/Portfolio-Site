@@ -49,11 +49,11 @@ header {
   margin-bottom: 40px;
   font-size: 32px;
   font-weight: 600;
-  line-height: 44px;
+  line-height: 20px;
 }
 
 .mobile-menu-m ul {
-  padding: 80px 28px 0 28px;
+  padding: 70px 15px 24px 45px;
   width: 100%;
   list-style-type: none;
   color: white;
