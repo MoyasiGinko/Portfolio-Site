@@ -160,7 +160,7 @@ header {
 
 .main-container h1 {
   font-size: 40px;
-  font-weight: 700px;
+  font-weight: 700;
   line-height: 52px;
   color: #172b4d;
   margin-bottom: 10px;
@@ -728,7 +728,7 @@ header {
     width: 98px;
     height: 24px;
     flex-direction: row;
-    align-items: left;
+    align-items: flex-end;
     text-align: left;
     margin-left: 10px;
   }
