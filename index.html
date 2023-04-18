@@ -7,15 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moyasi Ginko</title>
     <link rel="stylesheet" href="style.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="wrapper">
+        <div id="overlay"></div>
+        <div id="mobile-menu" class="mobile-menu-m">
+            <ul>
+                <li><a href="#card-section" id="link1" class="menu-item">Portfolio</a></li>
+                <li><a href="#about" class="menu-item">About</a></li>
+                <li><a href="#form-section" class="menu-item">Contact</a></li>
+            </ul>
+        </div>
         <div class="front-page">
             <header>
                 <a href="#" id="logo">My Logo</a>
                 <nav>
-                    <i class="fa fa-bars fa-lg"></i>
+                    <button id="menu-btn-open" class="hamburger" type="button">
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-middle"></span>
+                        <span class="hamburger-bottom"></span>
+                    </button type="button">
                     <ul class="nav-links">
                         <li>
                             <a href="#card-section">Portfolio</a>
@@ -337,5 +349,6 @@
             </div>
         </section>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

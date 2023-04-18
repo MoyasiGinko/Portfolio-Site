@@ -45,11 +45,60 @@ header {
   color: #6070ff;
 }
 
+.mobile-menu-m ul li {
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.mobile-menu-m ul {
+  padding: 70px 15px 24px 45px;
+  width: 100%;
+  list-style-type: none;
+  color: white;
+}
+
+.mobile-menu-m {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  display: flex;
+  text-align: left;
+  transform: translateX(-100%);
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.mobile-menu-m ul li a {
+  color: white;
+  text-decoration: none;
+}
+
 #logo:hover {
   transform: rotate(-4deg);
 }
 
-.stake {
+.overlay-show {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  display: flex;
+  backdrop-filter: blur(5px);
+  background-color: #6070ff;
+  mix-blend-mode: multiply;
+}
+
+.show-menu {
+  transform: translateX(0);
+}
+
+.stop-scrolling {
+  overflow: hidden;
+}
+
+.hamburger {
   position: absolute;
   right: 20px;
   z-index: 10;
@@ -60,9 +109,9 @@ header {
   border: none;
 }
 
-.stake-top,
-.stake-middle,
-.stake-bottom {
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
   position: absolute;
   width: 20px;
   height: 2px;
@@ -72,29 +121,29 @@ header {
   transition: all 0.5s;
 }
 
-.stake-middle {
+.hamburger-middle {
   transform: translateY(5px);
 }
 
-.stake-bottom {
+.hamburger-bottom {
   transform: translateY(10px);
 }
 
-/* Transition stake to X when open */
+/* Transition hamburger to X when open */
 .open {
   transform: rotate(90deg);
 }
 
-.open .stake-top {
+.open .hamburger-top {
   transform: rotate(45deg) translateY(6px) translateX(6px);
   background-color: #fff;
 }
 
-.open .stake-middle {
+.open .hamburger-middle {
   display: none;
 }
 
-.open .stake-bottom {
+.open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
   background-color: #fff;
 }
@@ -112,7 +161,7 @@ header {
 
 .main-container h1 {
   font-size: 40px;
-  font-weight: 700px;
+  font-weight: 700;
   line-height: 52px;
   color: #172b4d;
   margin-bottom: 10px;
@@ -517,6 +566,10 @@ header {
 }
 
 @media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
   header {
     padding: 1.5% 9%;
     position: fixed;
@@ -524,7 +577,12 @@ header {
     padding-bottom: 10px;
   }
 
-  header .fa-bars {
+  #check {
+    display: none;
+  }
+
+  header .fa-bars,
+  header .fa-times {
     display: none;
   }
 
@@ -671,7 +729,7 @@ header {
     width: 98px;
     height: 24px;
     flex-direction: row;
-    align-items: left;
+    align-items: flex-end;
     text-align: left;
     margin-left: 10px;
   }
