@@ -54,49 +54,49 @@ const projectData = [
 ];
 
 // Render project cards
-const projectCard = document.querySelector('.card__container');
+// const projectCard = document.querySelector('.card__container');
 
-function displayCard(id) {
-  projectCard.innerHTML += `
-    <div class="items card-1">
-      <div>
-        <img src="${projectData[id].image}" alt="screenshot" class="screenshot">
-      </div>
-      <div class="card__description">
-        <div>
-          <h3 class="card-title">${projectData[id].title}</h3>
-          <div class="card-bg-info">
-            <p>Canopy</p>
-            <ul>
-                <li>${projectData[id].technologies[0]}</li>
-                <li>${projectData[id].technologies[1]}</li>
-            </ul>
-          </div>
-        </div>
-        <div class="card__text">
-          <p>
-          ${projectData[id].text}
-          </p>
-        </div>
-        <div class="card__skills">
-          <ul>
-            <li>${projectData[id].skills[0]}</li>
-            <li>${projectData[id].skills[1]}</li>
-            <li>${projectData[id].skills[2]}</li>
-          </ul>
-        </div>
-        <div>
-          <button class="btn">See Project</button>
-        </div>
-      </div>
-    </div>
-  `;
-}
+// function displayCard(id) {
+//   projectCard.innerHTML += `
+//     <div class="items card-1">
+//       <div>
+//         <img src="${projectData[id].image}" alt="screenshot" class="screenshot">
+//       </div>
+//       <div class="card__description">
+//         <div>
+//           <h3 class="card-title">${projectData[id].title}</h3>
+//           <div class="card-bg-info">
+//             <p>Canopy</p>
+//             <ul>
+//                 <li>${projectData[id].technologies[0]}</li>
+//                 <li>${projectData[id].technologies[1]}</li>
+//             </ul>
+//           </div>
+//         </div>
+//         <div class="card__text">
+//           <p>
+//           ${projectData[id].text}
+//           </p>
+//         </div>
+//         <div class="card__skills">
+//           <ul>
+//             <li>${projectData[id].skills[0]}</li>
+//             <li>${projectData[id].skills[1]}</li>
+//             <li>${projectData[id].skills[2]}</li>
+//           </ul>
+//         </div>
+//         <div>
+//           <button class="btn">See Project</button>
+//         </div>
+//       </div>
+//     </div>
+//   `;
+// }
 
-for (let i = 0; i < projectData.length; i += 1) {
-  // displayCard(i);
-  // Let's just keep the function here, although we are not using it.
-}
+// for (let i = 0; i < projectData.length; i += 1) {
+//   // displayCard(i);
+//   // Let's just keep the function here, although we are not using it.
+// }
 
 // popup window
 const projectBtn = document.querySelectorAll('.btn');
