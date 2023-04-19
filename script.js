@@ -104,7 +104,7 @@ const workData = [
   {
     name: 'Tonic',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    skills: ['html', 'css', 'javascript'],
+    skills: ['html', 'css', 'javascript', 'Ruby', 'Boostrap'],
     technologies: ['Canopy', 'Back End Dev', '2015'],
     source: 'https://github.com/MoyasiGinko/Portfolio-Site/',
     livelink: 'https://MoyasiGinko.github.io/Portfolio-Site/',
@@ -112,7 +112,7 @@ const workData = [
   {
     name: 'Tonic',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    skills: ['html', 'css', 'javascript'],
+    skills: ['html', 'css', 'javascript', 'Ruby', 'Boostrap'],
     technologies: ['Canopy', 'Back End Dev', '2015'],
     source: 'https://github.com/MoyasiGinko/Portfolio-Site/',
     livelink: 'https://MoyasiGinko.github.io/Portfolio-Site/',
@@ -120,7 +120,7 @@ const workData = [
   {
     name: 'Tonic',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    skills: ['html', 'css', 'javascript'],
+    skills: ['html', 'css', 'javascript', 'Ruby', 'Boostrap'],
     technologies: ['Canopy', 'Back End Dev', '2015'],
     source: 'https://github.com/MoyasiGinko/Portfolio-Site/',
     livelink: 'https://MoyasiGinko.github.io/Portfolio-Site/',
@@ -128,7 +128,7 @@ const workData = [
   {
     name: 'Tonic',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    skills: ['html', 'css', 'javascript'],
+    skills: ['html', 'css', 'javascript', 'Ruby', 'Boostrap'],
     technologies: ['Canopy', 'Back End Dev', '2015'],
     source: 'https://github.com/MoyasiGinko/Portfolio-Site/',
     livelink: 'https://MoyasiGinko.github.io/Portfolio-Site/',
@@ -163,11 +163,15 @@ function showPopUp(id) {
           <p>${workData[id].description}</p>
         </div>
         <div>
-          <div class="card__skills">
+          <div id="card__skills" class="card__skills">
             <ul>
               <li>${workData[id].skills[0]}</li>
               <li>${workData[id].skills[1]}</li>
               <li>${workData[id].skills[2]}</li>
+              <ul class="skills__ext">
+                <li>${workData[id].skills[3]}</li>
+                <li>${workData[id].skills[4]}</li>
+              </ul>
             </ul>
           </div>
           <div class="Live">

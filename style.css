@@ -648,6 +648,10 @@ header {
   display: none;
 }
 
+.skills__ext {
+  display: none;
+}
+
 /* Media Queries */
 @media (max-width: 400px) {
   .cards {
@@ -881,8 +885,13 @@ header {
   }
 
   #popup-img {
-    height: 430px;
+    margin-top: 12px;
+    height: 100%;
     width: 100%;
+  }
+
+  .skills__ext {
+    display: block;
   }
 }
 
@@ -930,11 +939,5 @@ header {
 
   .card__skills ul li {
     font-size: 15px;
-  }
-
-  /* Popup */
-  #popup-img {
-    height: 586px;
-    width: 100%;
   }
 }
