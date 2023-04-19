@@ -163,22 +163,17 @@ function showPopUp(id) {
           <p>${workData[id].description}</p>
         </div>
         <div>
-          <div class="card__skillspop">
+          <div class="card__skills">
             <ul>
               <li>${workData[id].skills[0]}</li>
               <li>${workData[id].skills[1]}</li>
               <li>${workData[id].skills[2]}</li>
             </ul>
           </div>
-          <div class="popup-btn">
-            <a href="${workData[id].livelink}">
-              See Live
-              <img src="asset/live-icon.svg" alt="live-icon"/>
-            </a>
-            <a href="${workData[id].source}">
-              See Source
-              <img src="asset/github-blue.png" alt="github" />
-            </a>
+          <div class="Live">
+          <a href="#" class="live1">See live <img class="live1-img" src="./asset/live.png" width="24"></a>
+          <a href="#" class="live1">See Source <img class="live1-img" src="./asset/Vector.png" width="24"></a>
+       </div>
           </div>
         </div>
       </div>

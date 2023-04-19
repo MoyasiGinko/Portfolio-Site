@@ -327,7 +327,7 @@ header {
   padding-top: 10px;
 }
 
-.card__skillspop {
+.card__skills ul li {
   float: left;
   list-style: none;
   align-items: center;
@@ -342,19 +342,47 @@ header {
   cursor: pointer;
 }
 
-.card__skills ul li {
-  float: left;
-  list-style: none;
+.Live {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.live1 {
+  display: flex;
   align-items: center;
-  margin-right: 8px;
-  background: #ebebff;
-  color: #6070ff;
-  font-size: 12px;
+  font-style: normal;
   font-weight: 500;
-  line-height: 16px;
-  padding: 4px 12px;
+  font-size: 17px;
+  line-height: 24px;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 10px;
+  color: #396df2;
+  background: transparent;
   border-radius: 8px;
+  border: 1px solid #5564eb;
   cursor: pointer;
+  margin: 12px 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.live1-img {
+  padding-left: 10px;
+}
+
+.live1:hover {
+  background-color: #6070fff5;
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+.live1:active {
+  background-color: #2231d2e7;
+  color: #fff;
 }
 
 .card__skills ul li:hover {
