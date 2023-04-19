@@ -868,20 +868,14 @@ header {
     align-content: space-between;
     flex-direction: row;
   }
-  
+
   #myModal {
-    display: float;
     position: relative;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
-    background: #FFFFFF;
-    border: 1px solid #EBECF0;
-    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+    background: #ffffff;
+    border: 1px solid #ebecf0;
     border-radius: 16px;
   }
-  
+
   #myModal .card-description img {
     margin-top: 20px;
   }
@@ -938,7 +932,7 @@ header {
     font-size: 15px;
   }
 
-  /*Popup*/
+  /* Popup */
   #popup-img {
     height: 586px;
     width: 100%;
