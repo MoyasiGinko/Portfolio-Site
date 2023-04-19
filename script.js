@@ -106,7 +106,7 @@ const workData = [
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     skills: ['html', 'css', 'javascript'],
     technologies: ['Canopy', 'Back End Dev', '2015'],
-    source: 'https://MoyasiGinko.github.io/Portfolio-Site/',
+    source: 'https://github.com/MoyasiGinko/Portfolio-Site/',
     livelink: 'https://MoyasiGinko.github.io/Portfolio-Site/',
   },
   {
@@ -114,7 +114,7 @@ const workData = [
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     skills: ['html', 'css', 'javascript'],
     technologies: ['Canopy', 'Back End Dev', '2015'],
-    source: 'https://MoyasiGinko.github.io/Portfolio-Site/',
+    source: 'https://github.com/MoyasiGinko/Portfolio-Site/',
     livelink: 'https://MoyasiGinko.github.io/Portfolio-Site/',
   },
   {
@@ -122,7 +122,7 @@ const workData = [
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     skills: ['html', 'css', 'javascript'],
     technologies: ['Canopy', 'Back End Dev', '2015'],
-    source: 'https://MoyasiGinko.github.io/Portfolio-Site/',
+    source: 'https://github.com/MoyasiGinko/Portfolio-Site/',
     livelink: 'https://MoyasiGinko.github.io/Portfolio-Site/',
   },
   {
@@ -130,7 +130,7 @@ const workData = [
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     skills: ['html', 'css', 'javascript'],
     technologies: ['Canopy', 'Back End Dev', '2015'],
-    source: 'https://MoyasiGinko.github.io/Portfolio-Site/',
+    source: 'https://github.com/MoyasiGinko/Portfolio-Site/',
     livelink: 'https://MoyasiGinko.github.io/Portfolio-Site/',
   },
 ];
@@ -154,9 +154,8 @@ function showPopUp(id) {
             <li>${projectData[id].technologies[1]}</li>
           </ul>
         </div>
-        <div> 
+        <div class="popup-img"> 
           <img id="popup-img" src="${projectData[id].image}" alt='screenshot'/>
-          <img id="popupdesk" src="${projectData[id].image}" alt='screenshot'/>
         </div>
       </div>
       <div class="popup-description">
@@ -172,9 +171,8 @@ function showPopUp(id) {
             </ul>
           </div>
           <div class="Live">
-          <a href="#" class="live1">See live <img class="live1-img" src="./asset/live.png" width="24"></a>
-          <a href="#" class="live1">See Source <img class="live1-img" src="./asset/Vector.png" width="24"></a>
-       </div>
+            <a href="${workData[id].livelink}" class="live1">See live <img class="live1-img" src="./asset/live.png" width="24"></a>
+            <a href="${workData[id].source}" class="live1">See Source <img class="live1-img" src="./asset/Vector.png" width="24"></a>
           </div>
         </div>
       </div>
