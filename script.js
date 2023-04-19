@@ -154,7 +154,7 @@ function showPopUp(id) {
             <li>${projectData[id].technologies[1]}</li>
           </ul>
         </div>
-        <div>
+        <div> 
           <img id="popup-img" src="${projectData[id].image}" alt='screenshot'/>
         </div>
       </div>
@@ -163,7 +163,7 @@ function showPopUp(id) {
           <p>${workData[id].description}</p>
         </div>
         <div>
-          <div class="card__skills">
+          <div class="card__skillspop">
             <ul>
               <li>${workData[id].skills[0]}</li>
               <li>${workData[id].skills[1]}</li>
