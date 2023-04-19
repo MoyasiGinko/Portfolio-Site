@@ -385,6 +385,10 @@ header {
   color: #fff;
 }
 
+#popupdesk {
+  display: none;
+}
+
 .card__skills ul li:hover {
   background: #cdcdfe;
 }

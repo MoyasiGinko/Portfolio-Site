@@ -156,6 +156,7 @@ function showPopUp(id) {
         </div>
         <div> 
           <img id="popup-img" src="${projectData[id].image}" alt='screenshot'/>
+          <img id="popupdesk" src="${projectData[id].image}" alt='screenshot'/>
         </div>
       </div>
       <div class="popup-description">
