@@ -20,8 +20,6 @@ document.documentElement.addEventListener('click', (e) => {
   }
 });
 
-// popup window setup
-// Project Cards Info
 const projectData = [
   {
     image: 'asset/snapshot1.svg',
@@ -53,7 +51,6 @@ const projectData = [
   },
 ];
 
-// popup window
 const projectBtn = document.querySelectorAll('.btn');
 const workData = [
   {
@@ -91,7 +88,6 @@ const workData = [
 ];
 const popUp = document.getElementById('modal');
 
-// popUp.classList.add('popup');
 function showPopUp(id) {
   popUp.style.display = 'block';
   overlay.classList.toggle('overlay-bg');
@@ -209,7 +205,6 @@ function populateStorage() {
   setInputsData();
 }
 
-// Testing if storage has been populated
 if (storage('localStorage')) {
   if (!localStorage.getItem('inputsData')) {
     populateStorage();
@@ -218,7 +213,6 @@ if (storage('localStorage')) {
   }
 }
 
-// Responding to storage changes with the StorageEvents
 const name = document.getElementById('name');
 const email = document.getElementById('email');
 const message = document.getElementById('message');
