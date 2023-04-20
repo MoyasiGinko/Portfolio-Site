@@ -648,6 +648,7 @@ header {
   display: none;
 }
 
+/* Email error-message */
 #error-msg {
   display: flex;
   color: red;
