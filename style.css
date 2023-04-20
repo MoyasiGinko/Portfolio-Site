@@ -650,12 +650,11 @@ header {
 
 /* Email error-message */
 #error-msg {
-  display: none;
-  display: flex;
   color: red;
   font-size: smaller;
   background-color: #dedcac;
   border-radius: 5px 5px 5px 5px;
+  display: none;
 }
 
 .skills__ext {
