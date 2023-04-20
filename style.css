@@ -79,6 +79,59 @@ header {
   transform: rotate(-4deg);
 }
 
+/* Popup window */
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: hsl(0deg 0% 13% / 76%);
+  backdrop-filter: blur(6px);
+}
+
+#myModal {
+  position: relative;
+  background-color: #fefefe;
+  width: 86%;
+  margin: 10% auto;
+  padding: 18px 16px;
+  border-radius: 16px;
+}
+
+#myModal .card-description img {
+  margin-top: 20px;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup-header button {
+  border: none;
+}
+
+#popup-close {
+  cursor: pointer;
+  margin-right: auto;
+  margin-top: -18px;
+  margin-left: -18px;
+}
+
+.overlay-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  display: flex;
+  background-color: #ebebff;
+  mix-blend-mode: multiply;
+}
+
 .overlay-show {
   position: fixed;
   width: 100%;
@@ -287,6 +340,49 @@ header {
   padding: 4px 12px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.Live {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin-top: 40px;
+  margin-left: 7px;
+}
+
+.live1 {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 10px;
+  color: #396df2;
+  background: transparent;
+  border-radius: 8px;
+  border: 1px solid #5564eb;
+  cursor: pointer;
+  margin: 12px 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.live1-img {
+  padding-left: 10px;
+}
+
+.live1:hover {
+  background-color: #6070fff5;
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+.live1:active {
+  background-color: #2231d2e7;
+  color: #fff;
 }
 
 .card__skills ul li:hover {
@@ -552,6 +648,14 @@ header {
   display: none;
 }
 
+.skills__ext {
+  display: none;
+}
+
+#desk__text {
+  display: none;
+}
+
 /* Media Queries */
 @media (max-width: 400px) {
   .cards {
@@ -672,6 +776,25 @@ header {
     flex-direction: row-reverse;
   }
 
+  #card-text {
+    font-size: 18px;
+    margin: 24px 0 24px 0;
+  }
+
+  .Live {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 40px;
+    margin-left: 7px;
+  }
+
+  .live1 {
+    display: flex;
+    flex-direction: row;
+    padding: 8px 12px;
+  }
+
   /* About Section */
   .about__container {
     grid-template-columns: 40% 60%;
@@ -759,6 +882,63 @@ header {
     text-align: center;
     padding: 12px 16px;
   }
+
+  /* Modal */
+  .popup-description {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .align__colm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 306px;
+    height: 100%;
+  }
+
+  #card__textpop {
+    gap: 12px;
+    width: 100%;
+    height: 100%;
+  }
+
+  #myModal {
+    position: relative;
+    background: #fff;
+    border: 1px solid #ebecf0;
+    border-radius: 16px;
+  }
+
+  #myModal .card-description img {
+    margin-top: 20px;
+  }
+
+  #popup-img {
+    margin-top: 36px;
+    height: 100%;
+    width: 100%;
+  }
+
+  #card__skills {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 6px;
+    gap: 8px;
+  }
+
+  .skills__ext {
+    display: block;
+  }
+
+  #card__skills ul li {
+    cursor: pointer;
+  }
+
+  #desk__text {
+    display: block;
+  }
 }
 
 /* laptop L 1440px */
@@ -796,11 +976,6 @@ header {
   .card-bg-info p,
   .card-bg-info li {
     font-size: 18px;
-  }
-
-  .card__text {
-    font-size: 18px;
-    margin: 24px 0 24px 0;
   }
 
   .card__skills ul li {
