@@ -156,7 +156,7 @@ document.documentElement.addEventListener('click', (e) => {
   }
 });
 
-// Email input validation
+// Form email input validation
 const form = document.getElementById('form');
 
 function validate(input) {
