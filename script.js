@@ -191,24 +191,15 @@ function storage(type) {
   }
 }
 
-// Testing if storage has been populated
-if (storage('localStorage')) {
-  if (!localStorage.getItem('inputsData')) {
-    populateStorage();
-  } else {
-    setInputsData();
-  }
-}
-
-//Getting values from storage
+// Getting values from storage
 function setInputsData() {
   const inputsDataObj = JSON.parse(localStorage.getItem('inputsData'));
   document.getElementById('name').value = inputsDataObj.name;
   document.getElementById('email').value = inputsDataObj.email;
   document.getElementById('message').value = inputsDataObj.message;
 }
- 
-//Setting values in storage
+
+// Setting values in storage
 function populateStorage() {
   const inputsDataObj = {};
   inputsDataObj.name = document.getElementById('name').value;
@@ -216,6 +207,15 @@ function populateStorage() {
   inputsDataObj.message = document.getElementById('message').value;
   localStorage.setItem('inputsData', JSON.stringify(inputsDataObj));
   setInputsData();
+}
+
+// Testing if storage has been populated
+if (storage('localStorage')) {
+  if (!localStorage.getItem('inputsData')) {
+    populateStorage();
+  } else {
+    setInputsData();
+  }
 }
 
 // Responding to storage changes with the StorageEvents
