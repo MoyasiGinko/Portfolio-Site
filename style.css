@@ -898,7 +898,6 @@ header {
   }
 
   #card__textpop {
-    padding: 0px;
     gap: 12px;
     width: 100%;
     height: 100%;
@@ -919,10 +918,6 @@ header {
     margin-top: 36px;
     height: 100%;
     width: 100%;
-  }
-
-  .card__skills {
-    padding-top: 0px;
   }
 
   #card__skills {
