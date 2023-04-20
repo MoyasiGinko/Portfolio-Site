@@ -648,6 +648,15 @@ header {
   display: none;
 }
 
+/* Email error-message */
+#error-msg {
+  color: red;
+  font-size: smaller;
+  background-color: darkred;
+  border-radius: 5px 5px 5px 5px;
+  display: none;
+}
+
 .skills__ext {
   display: none;
 }

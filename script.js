@@ -155,3 +155,19 @@ document.documentElement.addEventListener('click', (e) => {
     overlay.classList.toggle('overlay-bg');
   }
 });
+
+const form = document.getElementById('form');
+
+function validate(input) {
+  if (input === input.toLowerCase()) return true;
+  return false;
+}
+
+form.addEventListener('submit', (e) => {
+  const email = document.getElementById('email');
+  if (!validate(email.value)) {
+    e.preventDefault();
+    const error = document.getElementById('error-msg');
+    error.style.display = 'block';
+  }
+});
