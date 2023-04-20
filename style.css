@@ -652,7 +652,7 @@ header {
 #error-msg {
   color: red;
   font-size: smaller;
-  background-color: #dedcac;
+  background-color: darkred;
   border-radius: 5px 5px 5px 5px;
   display: none;
 }
