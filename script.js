@@ -171,3 +171,58 @@ form.addEventListener('submit', (e) => {
     error.style.display = 'block';
   }
 });
+
+// Local storage setup
+function storage(type) {
+  let storage;
+  try {
+    storage = window[type];
+    const x = '__storage_test__';
+    storage.setItem(x, x);
+    storage.removeItem(x);
+    return true;
+  } catch (e) {
+    return e instanceof DOMException && (
+      e.code === 22
+      || e.code === 1014
+      || e.name === 'QuotaExceededError'
+      || e.name === 'NS_ERROR_DOM_QUOTA_REACHED')
+      && (storage && storage.length !== 0);
+  }
+}
+
+// Testing if storage has been populated
+if (storage('localStorage')) {
+  if (!localStorage.getItem('inputsData')) {
+    populateStorage();
+  } else {
+    setInputsData();
+  }
+}
+
+//Getting values from storage
+function setInputsData() {
+  const inputsDataObj = JSON.parse(localStorage.getItem('inputsData'));
+  document.getElementById('name').value = inputsDataObj.name;
+  document.getElementById('email').value = inputsDataObj.email;
+  document.getElementById('message').value = inputsDataObj.message;
+}
+ 
+//Setting values in storage
+function populateStorage() {
+  const inputsDataObj = {};
+  inputsDataObj.name = document.getElementById('name').value;
+  inputsDataObj.email = document.getElementById('email').value;
+  inputsDataObj.message = document.getElementById('message').value;
+  localStorage.setItem('inputsData', JSON.stringify(inputsDataObj));
+  setInputsData();
+}
+
+// Responding to storage changes with the StorageEvents
+const name = document.getElementById('name');
+const email = document.getElementById('email');
+const message = document.getElementById('message');
+
+name.addEventListener('input', populateStorage);
+email.addEventListener('input', populateStorage);
+message.addEventListener('input', populateStorage);
