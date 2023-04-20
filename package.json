@@ -18,5 +18,11 @@
   "homepage": "https://github.com/MoyasiGinko/Portfolio-Site#readme",
   "dependencies": {
     "openai": "^3.2.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.27.5"
   }
 }
