@@ -159,25 +159,31 @@ function showPopUp(id) {
         </div>
       </div>
       <div class="popup-description">
-        <div class="card__text">
+        <div id="card__textpop" class="card__text">
           <p>${workData[id].description}</p>
+          <br></br>
+          <p id="desk__text">${workData[id].description}</p>
         </div>
         <div>
-          <div id="card__skills" class="card__skills">
-            <ul>
-              <li>${workData[id].skills[0]}</li>
-              <li>${workData[id].skills[1]}</li>
-              <li>${workData[id].skills[2]}</li>
-              <ul class="skills__ext">
-                <li>${workData[id].skills[3]}</li>
-                <li>${workData[id].skills[4]}</li>
+          <div class="align__colm">
+            <div id="card__skills" class="card__skills">
+              <ul>
+                <li>${workData[id].skills[0]}</li>
+                <li>${workData[id].skills[1]}</li>
+                <li>${workData[id].skills[2]}</li>
               </ul>
-            </ul>
-          </div>
-          <div class="Live">
-            <a href="${workData[id].livelink}" class="live1">See live <img class="live1-img" src="./asset/live.png" width="24"></a>
-            <a href="${workData[id].source}" class="live1">See Source <img class="live1-img" src="./asset/Vector.png" width="24"></a>
-          </div>
+            </div>
+            <div id="card__skills" class="card__skills">
+              <ul class="skills__ext">
+              <li>${workData[id].skills[3]}</li>
+              <li>${workData[id].skills[4]}</li>
+              </ul>
+            </div>
+            <div class="Live">
+              <a href="${workData[id].livelink}" class="live1">See live <img class="live1-img" src="./asset/live.png" width="24"></a>
+              <a href="${workData[id].source}" class="live1">See Source <img class="live1-img" src="./asset/Vector.png" width="24"></a>
+            </div>
+          </div?  
         </div>
       </div>
     </div>
